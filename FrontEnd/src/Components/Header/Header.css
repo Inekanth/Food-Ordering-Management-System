@@ -1,0 +1,67 @@
+.Header{
+    height: 35vw;
+    margin: 30px;
+    background: url('C:\Users\Inekanth\Desktop\Food\FrontEnd\public\header_img.png') no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.Header-Contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+
+}
+
+.Header-Contents h2{
+    font-weight: 500;
+    color: whitesmoke;
+    font-size: max(4.5vw, 22px);
+}
+
+.Header-Contents p{
+    color: white;
+    font-size: 1vw;
+
+}
+
+.Header-Contents button{
+    border: none;
+    color: #747474;
+    font-weight: 300;
+    padding: 2vw, 2.3vw;
+    background-color: white;
+    font-size: max(1.5vw, 13px);
+    border-radius: 150px;
+    cursor: pointer;
+
+}
+
+@media (max-width:1080){
+    .Header-Contents{
+        max-width: 45%;
+
+    }
+
+}
+
+@media (max-width:750px){
+
+    .Header-Contents{
+        max-width: 65%;
+
+    }
+
+    .Header-Contents p{
+        display: none;
+    }
+
+    .Header-Contents button{
+        padding: 2vw 4vw;
+    }
+}
